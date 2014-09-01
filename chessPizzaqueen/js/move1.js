@@ -1,4 +1,4 @@
-/*globall function which get's called everytime irrespective of the tag u r clicking on*/
+/*globall/*globall function which get's called everytime irrespective of the tag u r clicking on*/
 
 function globall(obj)
 {
@@ -10,7 +10,7 @@ function globall(obj)
 	  //jing=obj.id;
 	  //alert(jing);
 	 
-	 
+	 document.getElementById(divid).style.backgroundColor='green';
 	  var imgname=obj.childNodes[0].getElementsByTagName;
 	 // document.write(imgname);
  
@@ -23,7 +23,7 @@ function globall(obj)
 	alert("entity"+entity);
 	
 	  
-	  if(colorOfEntity=='B' && entity=='PAWN')
+	  if(colorOfEntity=='W' && entity=='BSHOP')
 	  moveBPawn(divid);
 	  
 //	  alert("hello");

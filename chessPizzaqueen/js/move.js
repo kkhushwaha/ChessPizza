@@ -1,32 +1,53 @@
 /*globall function which get's called everytime irrespective of the tag u r clicking on*/
 function globall(obj)
 {
+    
      alert("hello");
-      var divid=obj.id;
-	  document.write(divid);
+     
+	  this.divid=obj.id;
+	  alert(divid);
+	   document.getElementById(divid).style.backgroundColor== 'green'
+	   if(document.getElementById(divid).style.backgroundColor!= 'red')
+	 {
+	 document.getElementById(divid).style.backgroundColor== 'green'
+	 this.jing=divid;
+	 alert("hi");
+	
+	 }
 	 
-	 
-	  /*var imgname=obj.childNodes[0].getElementsByTagName;
-	  document.write(imgname);*/
- 
+	 if(document.getElementById(divid).style.backgroundColor== 'red')
+	 {
+	 this.hking=divid;
+	 alert("hi");
+	 onclick123(hking);
+	  
+	 }
+	 else
+	 {
+
+	// document.getElementById(divid).style.backgroundColor='green';
+	
+	  var imgname=obj.childNodes[0].getElementsByTagName;
+	 // document.write(imgname);
+ alert(imgname+"imgname");
        var imgid=obj.childNodes[1].id;
-	//  document.write(imgid);
+	 alert(imgid);
 	  
 	var colorOfEntity=imgid.charAt(0);
 	
 	var entity=imgid.substring(1);
-	alert(entity);
+	alert("entity"+entity);
 	
+	//  if(colorOfEntity=='W' && entity=='QUEEN')
+	 // moveWQUEEN();
 	  
-	  if(colorOfEntity=='B' && entity=='PAWN')
-	  moveBPawn(divid);
-	  
+	  if(colorOfEntity=='W' && entity=='BISHOP')
+	  moveBishop();
 //	  alert("hello");
-	  
-	  
-	  
+// document.getElementById(divid).style.backgroundColor='#AAA';
+
 	  }
-	  
+}	  
 /*
 function PawnMove(colorType,startPosition);
 function RookMove(colorType,startPosition);
@@ -94,7 +115,74 @@ return false;
 
 */
 
+function moveBishop()
+{
+alert("hi");
+alert(divid);
+bsindex1=parseInt(divid.charAt(0));
+alert(bsindex1);
+bsindex2=parseInt(divid.charAt(1));
+alert(bsindex2);
+var bisdiv=""+bsindex1+bsindex2; 
 
+alert(bisdiv);
+
+for(k=bsindex1+1,p=bsindex2-1 ; k<=7 && p>=0 ; k++,p--)
+    {
+       nextdivid =""+k+p;
+//alert("in first for loop");
+thediv=document.getElementById(nextdivid);
+
+if(thediv.innerHTML == ' ')
+{
+//thediv.onclick=onclick123(thediv);
+thediv.style.backgroundColor='red';
+//document.getElementById(thediv).onclick =onclick123(); 
+
+
+
+}
+//thediv.onclick(onclick123(thediv));
+	  }
+	  
+ for(k=bsindex1+1,p=bsindex2+1; k<=7 && p<=7; k++,p++)
+    {
+        nextdivid =""+k+p;
+
+        thediv=document.getElementById(nextdivid);
+
+                if(thediv.innerHTML == ' ')
+             {  
+			// thediv.onclick=onclick123(thediv);
+                 thediv.style.backgroundColor='red';
+				// document.getElementById(thediv).onclick =onclick123(); 
+
+
+             }
+			 
+    }
+	
+
+	  
+	  
+for(k=bsindex1-1,p=bsindex2+1; k>=0 && p<=7; k--,p++)
+    {
+        nextdivid =""+k+p;
+alert("in second for loop");
+        thediv=document.getElementById(nextdivid);
+
+                if(thediv.innerHTML == ' ')
+             {
+		//	 thediv.onclick=onclick123(thediv);
+                 thediv.style.backgroundColor='red';
+//document.getElementById(thediv).onclick =onclick123(); 
+             }
+			 
+        
+
+    }
+}
+/*
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -108,5 +196,52 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("Text");
     ev.target.appendChild(document.getElementById(data));
 }
+*/
+function onclick123(ele)
+{
+alert("in onclick");
+alert(divid);
+var pf=ele.id;
+			alert(pf);
+			
+			
+		var image= document.getElementById(jing).innerHTML;
+			 alert(image);
+			// var child = divId.firstChild;
+			document.getElementById(jing).innerHTML = "";
+			
+            document.getElementById(hking).innerHTML = image;
+			document.getElementById(hking).style.backgroundColor='green';
+			//document.getElementById(jing).style.backgroundColor='#AAA';
+alert("in onclick1");
+
+for(i=0;i<=7;i++)
+{
+alert("hi");
+ for(j=0;j<=7;j++)
+ {
+ bdcgcolor=""+i+j;
+ 
+ alert(bdcgcolor);
+ty=parseInt(bdcgcolor);
+ alert(ty);
+ if( (i+j) % 2 == 0)
+ {
+    alert("in if");
+// if(bdcgcolor == hking)
+// {
+// document.getElementById(bdcgcolor).style.backgroundColor='green'
+// break;
+// }
 
 
+   document.getElementById(bdcgcolor).style.backgroundColor='#555';
+ }
+ else
+ {
+ document.getElementById(bdcgcolor).style.backgroundColor='#AAA';
+ }
+ }
+
+}
+}

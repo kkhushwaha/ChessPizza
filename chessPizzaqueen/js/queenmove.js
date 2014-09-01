@@ -5,11 +5,11 @@ function globall(obj)
      alert("hello");
      
 	  this.divid=obj.id;
-	  alert(divid);
+	  //alert(divid);
 	  //var jing=new globall();
 	  //jing=obj.id;
 	  //alert(jing);
-	 
+	 document.getElementById(divid).style.backgroundColor='green';
 	 
 	  var imgname=obj.childNodes[0].getElementsByTagName;
 	 // document.write(imgname);
@@ -22,11 +22,11 @@ function globall(obj)
 	var entity=imgid.substring(1);
 	alert("entity"+entity);
 	
-	  if(colorOfEntity=='W' && entity=='QUEEN')
-	  moveWQUEEN();
+	//  if(colorOfEntity=='W' && entity=='QUEEN')
+	 // moveWQUEEN();
 	  
-	  
-	  
+	  if(colorOfEntity=='W' && entity=='BISHOP')
+	  moveBishop();
 //	  alert("hello");
 	  
 	  
@@ -200,9 +200,6 @@ var tf=elen.id;
 alert("in onclick1");
 
 }
-
-
-
 
 
 
