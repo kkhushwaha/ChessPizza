@@ -1,4 +1,38 @@
-function moveBPWN()
+/*
+function globall(obj)
+{
+     alert("hello");
+     
+	  this.divid=obj.id;
+	  //alert(divid);
+	  
+	  
+	  divx=parseInt(divid.charAt(0));
+	 alert("divx="+divx);
+	 
+	 divy=parseInt(divid.charAt(1));
+	 alert("divy="+divy);
+	 
+	  var imgname=obj.childNodes[0].getElementsByTagName;
+	 // document.write(imgname);
+ 
+       var imgid=obj.childNodes[1].id;
+	 
+	  
+	var colorOfEntity=imgid.charAt(0);
+	alert("color of entity="+colorOfEntity);
+	
+	
+	var entity=imgid.substring(1);
+	//alert("entity"+entity);
+	
+	
+	  if(colorOfEntity=='W' && entity=='PAWN')
+	  moveWPAWN();
+	
+} 
+*/	 
+function moveWPAWN()
 {
 alert("in move PAWN");
 	
@@ -7,26 +41,24 @@ alert(" in moveWKING"+divid);
 findex1=parseInt(divid.charAt(0)); //4
 
 findex2=parseInt(divid.charAt(0)); //4
-sindex1=parseInt(divid.charAt(1)) ; //2
- sindex2=parseInt(divid.charAt(1)); //2
+sindex1=parseInt(divid.charAt(1))  //2
+ sindex2=parseInt(divid.charAt(1))  //2
  
  alert("findex1==="+findex1);
  alert("findex2==="+sindex1);
 alert("before split");
 
-
 count=0;
 
  
- if(findex1 == 6)
+ if(findex1 == 1)
 {
 alert("in if");
-  for(l=findex1-1,m=sindex1;l>=4;l--)
+  for(l=findex1+1,m=sindex1;l<=3;l++)
   {
    nextdivid =""+l+m;
-  
    thediv=document.getElementById(nextdivid);
-         if(l==3)
+         if(l==4)
          {
                break;
          }
@@ -40,8 +72,7 @@ alert("in if");
 			 else
 			 {
 			 break;
-			 }			 
-			 
+			 }
          }
    }
 }
@@ -49,7 +80,7 @@ else
 {
 
 alert("hi");
-     for(l=findex1-1,m=sindex1;l>=1;)
+     for(l=findex1+1,m=sindex1;l<=6;)
     {
         nextdivid =""+l+m;
 		 thediv=document.getElementById(nextdivid);
@@ -77,11 +108,15 @@ break;
 }
 }
 
+
+
+
+
 /* for killing from black pawn*/
 
 
 count1=0;
-for(l=findex1-1,m=sindex1+1;l>=1&&m<=7;)
+for(l=findex1+1,m=sindex1+1;l<=7&&m<=7;)
 {
 if(count1!=1)
 {
@@ -142,40 +177,15 @@ break;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 count2=0;
-for(l=findex1-1,m=sindex1-1;l>=1&&m>=1;)
+for(l=findex1+1,m=sindex1-1;l<=7&&m>=0;)
 {
 if(count2!=1)
 {
  nextdivid =""+l+m;
  thediv1=document.getElementById(nextdivid);
   
- if(m>=1)
+ if(m>=0)
  {
   if(thediv1.innerHTML == ' ')
              {
@@ -198,7 +208,7 @@ if(count2!=1)
             }
 			 
                  //thediv1.style.backgroundColor='red';
-				 count1=count1+1;
+				 count2=count2+1;
                    break;
              }
 			 }
@@ -215,61 +225,3 @@ break;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-for(l=findex1-1,m=sindex1;l>=1;)
-{
-if(count1!=2)
-{
- nextdivid =""+l+(m-1);
- thediv1=document.getElementById(nextdivid);
- 
- 
- 
- if((m-1)>=0)
- {
-  if(thediv1.innerHTML != ' ')
-             {
-                 thediv1.style.backgroundColor='red';
-				 count1=count1+1;
-                   break;
-             }
-}
-
-}
-else
-{
-
-break;
-}
-
-
-}
-
-
-
-
-
-
-}
-
-*/

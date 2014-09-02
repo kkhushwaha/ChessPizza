@@ -1,4 +1,4 @@
- <DOCTYPE html>
+<DOCTYPE html>
 <html lang="es">
 <head>
 
@@ -19,7 +19,7 @@
 		<script src="js/allmoves.js"></script>
 		<script src="js/forkillingKing.js"></script>
 		<script src="js/forkillingqueen.js"></script>
-		<script src="js/vinaypawn.js"></script>
+		<script src="js/wpawnmove.js"></script>
 		<script src="js/bpwn.js"></script>
 		
 </head>
@@ -27,7 +27,7 @@
 
 
 <body>
-	<form>
+	
 			<!-------------------------------------------------->
 	<div id="board" >
 		<div id="70" class="white" onclick="globall(this)"  value="busy"> 
@@ -54,15 +54,15 @@
 		<div id="77" class="black" onclick="globall(this)" value="busy"> 
 			<img src='img/rookN.png' id="BROOK" class='card'>
 		</div>	
-		<br/>
+		<br />
 		<div id="60" class="black" onclick="globall(this)" value="busy">
-		 	<img src='img/pawnN.png' id="BPAWN" class='card'  value='false'>
-		</div>
+			<img src='img/pawnN.png' id="BPAWN" class='card'  value='false'>
+		 </div>
 		<div id="61" class="white" onclick="globall(this)" value="busy">
 		 	<img src='img/pawnN.png' id="BPAWN" class='card'  value='false'>
 		</div>
 		<div id="62" class="black" onclick="globall(this)" value="busy">
-		 	<img src='img/pawnN.png' id="BPAWN" class='card'  value='false'>
+		 	<img src='img/pawnN.png' id="BPAWN" class='card  '  value='false'>
 		</div>
 		<div id="63" class="white" onclick="globall(this)" value="busy"> 
 				<img src='img/pawnN.png' id="BPAWN" class='card'  value='false'>
@@ -80,14 +80,10 @@
 		 	<img src='img/pawnN.png' id="BPAWN" class='card'  value='false'>
 		</div>	
 		<br />
-		<div id="50" class="white" onclick="globall(this)" value="empty"> 
-		  <!-- <img src='img/queenB.png' id="WQUEEN" class='card'>-->
-		</div>
+		<div id="50" class="white" onclick="globall(this)" value="empty"> </div>
 		<div id="51" class="black" onclick="globall(this)" value="empty"> </div>
 		<div id="52" class="white"  onclick="globall(this)" value="empty"> </div>
-		<div id="53" class="black" onclick="globall(this)" value="empty">
-		   <!--<img src='img/bishopN.png' id="BBISHOP"  class='card'>-->
-		</div>
+		<div id="53" class="black" onclick="globall(this)" value="empty"> </div>
 		<div id="54" class="white" onclick="globall(this)" value="empty"> </div>
 		<div id="55" class="black" onclick="globall(this)" value="empty"> </div>
 		<div id="56" class="white"  onclick="globall(this)" value="empty"> </div>
@@ -98,42 +94,34 @@
 		
 		<div id="41" class="white" onclick="globall(this)" value="empty"> </div>
 		<div id="42" class="black" onclick="globall(this)" value="empty"> </div>
-		<!--<img src='img/bishopB.png'  id="WBISHOP"  class='card'>-->
+		
 	
 		<div id="43" class="white" onclick="globall(this)" value="empty"> </div>
 		<div id="44" class="black" onclick="globall(this)" value="empty"> </div>
-		<div id="45" class="white" onclick="globall(this)" value="empty">
-		<!--<img src='img/bishopB.png' id="WBISHOP"  class='card'>-->
-		</div>
+		<div id="45" class="white" onclick="globall(this)" value="empty"> </div>
 		<div id="46" class="black" onclick="globall(this)" value="empty"> </div>
 		<div id="47" class="white" onclick="globall(this)" value="empty"> </div>	
 	    <br />
 		<div id="30" class="white" onclick="globall(this)"  value="empty"> </div>
-		<div id="31" class="black" onclick="globall(this)" value="empty">
-		<!--<img src='img/kingB.png' id="WKING" class='card'>-->
-		</div>
+		<div id="31" class="black" onclick="globall(this)" value="empty"> </div>
+		
 		<div id="32" class="white" onclick="globall(this)" value="empty"> </div>
 		
 		<div id="33" class="black" onclick="globall(this)" value="empty"> </div>
 		
 		
-		<div id="34" class="white" onclick="globall(this)" value="empty"> 
-		 <!--<img src='img/rookB.png' id="WROOK" class='card'>-->
-		</div>
-		<div id="35" class="black" onclick="globall(this)" value="empty"> 
-		<!--<img src='img/rookN.png' id="BROOK" class='card '>-->
-		</div>
+		<div id="34" class="white" onclick="globall(this)" value="empty"> </div>
+		 
+		
+		<div id="35" class="black" onclick="globall(this)" value="empty"> </div>
+		
 		<div id="36" class="white" onclick="globall(this)" value="empty"> </div>
 		<div id="37" class="black" onclick="globall(this)" value="empty"> </div>	
 		<br />
-		<div id="20" class="black" onclick="globall(this)" value="empty" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
-		<div id="21" class="white" onclick="globall(this)" value="empty"> 
-		<!--<img src='img/rookB.png' id="WROOK" id="WROOK" class='card'>-->
-		</div>
+		<div id="20" class="black" onclick="globall(this)" value="empty"> </div>
+		<div id="21" class="white" onclick="globall(this)" value="empty"> </div>
 		<div id="22" class="black" onclick="globall(this)" value="empty"> </div>
-		<div id="23" class="white" onclick="globall(this)" value="empty">
-        <!--<img src='img/pawnB.png' id="WPAWN" class='card' value='false'>-->
-		</div>
+		<div id="23" class="white" onclick="globall(this)" value="empty"> </div>
 		
 		<div id="24" class="black" onclick="globall(this)" value="empty"> </div>
 		
@@ -143,32 +131,32 @@
 		<div id="27" class="white" onclick="globall(this)" value="empty"> </div>	
 		<br />
 		<div id="10" class="white" value="busy" onclick="globall(this)">
-			 <img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
+			<img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
 		 </div>
 		<div id="11" class="black" value="busy" onclick="globall(this)">
-			 <img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
+			<img src='img/pawnB.png'  id="WPAWN" class='card' value='false'>
 		 </div>
 		<div id="12" class="white" value="busy" onclick="globall(this)">
-			 <img src='img/pawnB.png' id="WPAWN" class='card' value='false'> 
+			<img src='img/pawnB.png' id="WPAWN" class='card' value='false'> 
 		</div>
-		<div id="13" class="black" value="busy" onclick="globall(this)">
-			 <img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
-		 </div>
-		<div id="14" class="white" value="busy" onclick="globall(this)">
-			 <img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
-		 </div>
+		<div id="13" class="black" value="busy" onclick="globall(this)"> 
+			<img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
+		</div>
+		<div id="14" class="white" value="busy" onclick="globall(this)"> 
+		  <img src='img/pawnB.png' id="WPAWN" class='card' value='false'> 
+		</div> 
 		<div id="15" class="black" value="busy" onclick="globall(this)"> 
-			 <img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
+			<img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
 		</div>
 		<div id="16" class="white" value="busy" onclick="globall(this)"> 
-			 <img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
-		</div>
+		<img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
+        </div>
 		<div id="17" class="black" value="busy" onclick="globall(this)"> 
-			 <img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
+			<img src='img/pawnB.png' id="WPAWN" class='card' value='false'>
 		</div>	
 		<br />
 		<div id="00" class="black" value="busy" onclick="globall(this)">
-			<img src='img/rookB.png' id="WROOK" class='card'>
+			<img src='img/rookB.png' id="WROOK" id="WROOK" class='card'>
 		 </div>
 		<div id="01" class="white" value="busy" onclick="globall(this)"> 
 			<img src='img/knightB.png' id="WKNIGHT" class='card'>
@@ -220,8 +208,8 @@
 	<!--</section>
 	<!--<section id="undo">-->
 	
-   <!-- <button type="button" class="btn btn-success btn-lg">Undo</button>-->
-     <button type="button" class="btn btn-success btn-lg" onclick="window.location.reload()">clear</button>
+    <button type="button" class="btn btn-success btn-lg">Undo</button>
+     <button type="button" class="btn btn-success btn-lg">clear</button>
 </section>
 	<!--</section>-->
 	
@@ -255,5 +243,4 @@
 
 </div>
 </body>
-</form>
 </html>
