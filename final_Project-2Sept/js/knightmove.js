@@ -1,22 +1,22 @@
 function globall(obj)
 {
-     alert("hello");
+   //  alert("hello");
      
 	this.divid=obj.id;
 	  
-	alert(divid);
+//	alert(divid);
 	  
 	 
 	   var imgname=obj.childNodes[0].getElementsByTagName();
 	 
  
        var imgid=obj.childNodes[1].id;
-	 alert(imgid);
+//	 alert(imgid);
 	  
 	  var colorOfEntity=imgid.charAt(0);
 	
 	  var entity=imgid.substring(1);
-	alert("entity"+entity);
+//	alert("entity"+entity);
 	
 	  if(colorOfEntity=='W' && entity=='KNIGHT')
 	  moveWKNIGHT();
@@ -28,7 +28,7 @@ function globall(obj)
 	 
 	 function moveWKNIGHT()
 {
-alert(" in moveWQUEEN"+divid);
+//alert(" in moveWQUEEN"+divid);
 
 findex1=parseInt(divid.charAt(0)); //5
 

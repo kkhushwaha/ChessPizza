@@ -1,7 +1,7 @@
 //globall function which get's called everytime irrespective of the tag u r clicking on
 function globall(obj)
 {
-     alert("hello");
+    // alert("hello");
       var divid=obj.id;
 	  
 	 

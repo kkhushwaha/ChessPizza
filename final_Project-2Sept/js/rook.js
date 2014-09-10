@@ -165,7 +165,7 @@ for(l=findex1-1,m=sindex1; l>=0;l--)
 	
 	function moveWKNIGHT()
 {
-alert(" in moveWQUEEN"+divid);
+//alert(" in moveWQUEEN"+divid);
 
 findex1=parseInt(divid.charAt(0)); //5
 
@@ -180,11 +180,11 @@ sindex1=parseInt(divid.charAt(1))  //3
 
 count=0;
 
-alert("in all for loops");
+//alert("in all for loops");
 
 for(l=findex1+2,m=sindex1+1;m<=7;m++)
     {
-	alert("in first for loop");
+//	alert("in first for loop");
 	
 	if(count!=1)
 	{
@@ -198,15 +198,15 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in first loop"+count);
+//alert("value of count in first loop"+count);
 }
 else
 {
 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -247,16 +247,16 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in second loop"+count);
+//alert("value of count in second loop"+count);
 
 }
 else
 {
 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -292,16 +292,16 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in third loop"+count);
+//alert("value of count in third loop"+count);
 
 }
 else
 {
 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -335,16 +335,16 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in fourth loop"+count);
+//alert("value of count in fourth loop"+count);
 
 }
 else
 {
 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -377,17 +377,17 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert(count);
-alert("value of count in fifth loop"+count);
+//alert(count);
+//alert("value of count in fifth loop"+count);
 
 }
 else
 {
 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -422,16 +422,16 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in sixth loop"+count);
+//alert("value of count in sixth loop"+count);
 
 }
 else
 {
 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -462,16 +462,16 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in seventh loop"+count);
+//alert("value of count in seventh loop"+count);
 
 }
 else
 {
 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -504,16 +504,16 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in eigth loop"+count);
+//alert("value of count in eigth loop"+count);
 
 }
 else
 {
 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)

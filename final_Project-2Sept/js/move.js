@@ -1,9 +1,9 @@
 /*globall function which get's called everytime irrespective of the tag u r clicking on*/
 function globall(obj)
 {
-     alert("hello");
+ //    alert("hello");
       var divid=obj.id;
-	  document.write(divid);
+//	  document.write(divid);
 	 
 	 
 	  /*var imgname=obj.childNodes[0].getElementsByTagName;
@@ -13,10 +13,10 @@ function globall(obj)
 	//  (imgid);
 	  
 	var colorOfEntity=imgid.charAt(0);
-      alert("color of entity"+colorOfEntity);     
+  //    alert("color of entity"+colorOfEntity);     
 	 
 	var entity=imgid.substring(1);
-	alert(entity);
+//	alert(entity);
 	
 	  
 	  if(colorOfEntity=='B' && entity=='PAWN')

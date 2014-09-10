@@ -2,10 +2,10 @@
 
 function globall(obj)
 {
-     alert("hello");
+     //alert("hello");
      
 	  this.divid=obj.id;
-	  alert(divid);
+//	  alert(divid);
 	  //var jing=new globall();
 	  //jing=obj.id;
 	  //alert(jing);
@@ -15,12 +15,12 @@ function globall(obj)
 	 // document.write(imgname);
  
        var imgid=obj.childNodes[1].id;
-	 alert(imgid);
+//	 alert(imgid);
 	  
 	var colorOfEntity=imgid.charAt(0);
 	
 	var entity=imgid.substring(1);
-	alert("entity"+entity);
+//	alert("entity"+entity);
 	
 	  
 	  if(colorOfEntity=='B' && entity=='PAWN')
@@ -49,7 +49,7 @@ function moveBPawn()
 {
 
 
-alert(" in moveBPawn"+divid);
+//alert(" in moveBPawn"+divid);
 
 var pos=parseInt(divid);
 count=0;
@@ -60,7 +60,7 @@ for(i=8+pos;i<=63;i=i+8)
  if(count<=6)
  {
  
- alert("in if");
+ //alert("in if");
 nextdivid =i;
 //alert("value of next id"+nextdivid);
 
@@ -77,7 +77,7 @@ if(nextdivid.innerHTML =='');
 //if(a=='true')
 
 
-alert("no image in div"); 
+//alert("no image in div"); 
 
 document.getElementById(nextdivid).style.backgroundColor='red';
 
@@ -108,19 +108,19 @@ function IsEmpty(divid)
 */
 function onclick123(ele)
 {
-alert("in onclick");
-alert(divid);
+//alert("in onclick");
+//alert(divid);
 var pf=ele.id;
-			alert(pf);
+//			alert(pf);
 			
 			
 		var image= document.getElementById(divid).innerHTML;
-			 alert(image);
+//			 alert(image);
 			// var child = divId.firstChild;
 			document.getElementById(divid).innerHTML = "";
 			
             document.getElementById(pf).innerHTML = image;
-alert("in onclick1");
+//alert("in onclick1");
 
 }
 

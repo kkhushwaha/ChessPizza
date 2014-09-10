@@ -34,9 +34,9 @@ function globall(obj)
 */	 
 function moveWPAWN()
 {
-alert("in move PAWN");
+//alert("in move PAWN");
 	
-alert(" in moveWKING"+divid);
+//alert(" in moveWKING"+divid);
 
 findex1=parseInt(divid.charAt(0)); //4
 
@@ -44,16 +44,16 @@ findex2=parseInt(divid.charAt(0)); //4
 sindex1=parseInt(divid.charAt(1))  //2
  sindex2=parseInt(divid.charAt(1))  //2
  
- alert("findex1==="+findex1);
- alert("findex2==="+sindex1);
-alert("before split");
+ //alert("findex1==="+findex1);
+ //alert("findex2==="+sindex1);
+//alert("before split");
 
 count=0;
 
  
  if(findex1 == 1)
 {
-alert("in if");
+//alert("in if");
   for(l=findex1+1,m=sindex1;l<=3;l++)
   {
    nextdivid =""+l+m;
@@ -79,7 +79,7 @@ alert("in if");
 else
 {
 
-alert("hi");
+//alert("hi");
      for(l=findex1+1,m=sindex1;l<=6;)
     {
         nextdivid =""+l+m;

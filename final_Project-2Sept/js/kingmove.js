@@ -2,10 +2,10 @@
 
 function globall(obj)
 {
-     alert("hello");
+ //    alert("hello");
      
 	  this.divid=obj.id;
-	  alert(divid);
+	//  alert(divid);
 	  //var jing=new globall();
 	  //jing=obj.id;
 	  //alert(jing);
@@ -15,13 +15,13 @@ function globall(obj)
 	 // document.write(imgname);
  
        var imgid=obj.childNodes[1].id;
-	 alert(imgid);
+	// alert(imgid);
 	  
 	var colorOfEntity=imgid.charAt(0);
 	
 	var entity=imgid.substring(1);
-	alert("entity"+entity);
-	alert(colorOfEntity);
+//	alert("entity"+entity);
+//	alert(colorOfEntity);
 	
 	  if(colorOfEntity=='W' && entity=='KING')
 	  moveWKING();
@@ -49,31 +49,31 @@ function rookMove(colorType,startPosition);
 
 function moveWKING()
 {
-alert(" in moveWKING"+divid);
+//alert(" in moveWKING"+divid);
 
 findex1=parseInt(divid.charAt(0)); //4
 
 findex2=parseInt(divid.charAt(0)); //4
 sindex1=parseInt(divid.charAt(1))  //2
  sindex2=parseInt(divid.charAt(1))  //2
-alert("before split");
+//alert("before split");
  var splitid=""+findex1+sindex2;
 //alert("tempid"+splitid);
- alert("before loop");
- alert("in vertical forward direction");
+ //alert("before loop");
+ //alert("in vertical forward direction");
    for(i=findex1,l=sindex1;i<=(i+1);i++)
    {
-   alert("after loop");
+   //alert("after loop");
    nextdivid =""+i+l;
    thediv=document.getElementById(nextdivid);
             if(thediv.innerHTML == ' ')
 			{
-			alert("in if");
+			//alert("in if");
 				thediv.style.backgroundColor='red';
 			}
    }
    
-  alert("in vertical reverse direction") 
+ // alert("in vertical reverse direction") 
    for(j=findex1,k=sindex2;j>=j-1;j--)
    {
         nextdivid=""+j+l;
@@ -83,7 +83,7 @@ alert("before split");
 				thediv.style.backgroundColor='red';
 		}
    }
-   alert("in diagonal forward direction")
+   //alert("in diagonal forward direction")
    
    
     for(l=findex1,m=sindex2;l<=l+1 && m<=m+1 ;l++,m++)
@@ -97,7 +97,7 @@ alert("before split");
    }
    
    
-   alert("in daigonal reverse direction")
+   //alert("in daigonal reverse direction")
     for(o=findex1,p=sindex2;o>=j-1 && p>=p-1;j--,p--)
    {
         nextdivid=""+o+p;
@@ -132,7 +132,7 @@ alert("before split");
 		}
    }
    
-   alert("horizontal forward")
+  // alert("horizontal forward")
    
         for(i=findex1,j=sindex1;j<=j+1;j++)
 		{
@@ -156,7 +156,7 @@ alert("before split");
 		}
    
    
-   alert("after loop");
+ //  alert("after loop");
 }
 
 
@@ -164,19 +164,19 @@ alert("before split");
 
 function onclick1(elen)
 {
-alert("in onclick");
-alert(divid);
+//alert("in onclick");
+//alert(divid);
 var tf=elen.id;
 			//alert(pf);
 			
 			
 		var image= document.getElementById(divid).innerHTML;
-			 alert(image);
+			 //alert(image);
 			// var child = divId.firstChild;
 			document.getElementById(divid).innerHTML = "";
 			
             document.getElementById(tf).innerHTML = image;
-alert("in onclick1");
+//alert("in onclick1");
 
 }
 
@@ -333,19 +333,19 @@ function IsEmpty(divid)
 */
 function onclick123(ele)
 {
-alert("in onclick");
-alert(divid);
+//alert("in onclick");
+//alert(divid);
 var pf=ele.id;
-			alert(pf);
+			//alert(pf);
 			
 			
 		var image= document.getElementById(divid).innerHTML;
-			 alert(image);
+			 //alert(image);
 			// var child = divId.firstChild;
 			document.getElementById(divid).innerHTML = "";
 			
             document.getElementById(pf).innerHTML = image;
-alert("in onclick1");
+//alert("in onclick1");
 
 }
 
