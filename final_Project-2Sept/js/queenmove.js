@@ -3,10 +3,10 @@
 
 function globall(obj)
 {
-     alert("hello");
+   //  alert("hello");
      
 	  this.divid=obj.id;
-	  alert(divid);
+//	  alert(divid);
 	  //var jing=new globall();
 	  //jing=obj.id;
 	  //alert(jing);
@@ -16,12 +16,12 @@ function globall(obj)
 	 // document.write(imgname);
  
        var imgid=obj.childNodes[1].id;
-	 alert(imgid);
+//	 alert(imgid);
 	  
 	var colorOfEntity=imgid.charAt(0);
 	
 	var entity=imgid.substring(1);
-	alert("entity"+entity);
+//	alert("entity"+entity);
 	
 	  if(colorOfEntity=='W' && entity=='QUEEN')
 	  moveWQUEEN();
@@ -359,19 +359,19 @@ function IsEmpty(divid)
 */
 function onclick123(ele)
 {
-alert("in onclick");
-alert(divid);
+//alert("in onclick");
+//alert(divid);
 var pf=ele.id;
-			alert(pf);
+		//	alert(pf);
 			
 			
 		var image= document.getElementById(divid).innerHTML;
-			 alert(image);
+		//	 alert(image);
 			// var child = divId.firstChild;
 			document.getElementById(divid).innerHTML = "";
 			
             document.getElementById(pf).innerHTML = image;
-alert("in onclick1");
+//alert("in onclick1");
 
 }
 
