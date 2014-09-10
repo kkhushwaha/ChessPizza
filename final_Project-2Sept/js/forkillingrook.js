@@ -2,7 +2,7 @@
 
 function moveBROOK()
 {
-alert(" in moveWQUEEN"+divid);
+//alert(" in moveWQUEEN"+divid);
 
 findex1=parseInt(divid.charAt(0)); //4
 
@@ -29,10 +29,10 @@ sindex1=parseInt(divid.charAt(1))  //2
 			 {
 			 
 			 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+	//alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+// alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -64,10 +64,10 @@ for(l=findex1,m=sindex1-1; m>=0;m--)
 			 else
 			 {
 			 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+	//alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+// alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -100,10 +100,10 @@ for(l=findex1+1,m=sindex1; l<=7;l++)
 			 {
 			 	 
 			 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -130,10 +130,10 @@ for(l=findex1-1,m=sindex1; l>=0;l--)
 			 else
 			 {	 
 			 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
