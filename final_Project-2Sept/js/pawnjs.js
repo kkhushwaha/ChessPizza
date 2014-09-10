@@ -1,23 +1,23 @@
 function globall(obj)
 {
     
-     alert("hello");
+    // alert("hello");
      
 	  this.divid=obj.id;
-	  alert(divid);
+//	  alert(divid);
 	   document.getElementById(divid).style.backgroundColor== 'green';
 	   if(document.getElementById(divid).style.backgroundColor!= 'red')
 	 {
 	 document.getElementById(divid).style.backgroundColor== 'green';
 	 this.jing=divid;
-	 alert("hi");
+//	 alert("hi");
 	
 	 }
 	 
 	 if(document.getElementById(divid).style.backgroundColor== 'red')
 	 {
 	 this.hking=divid;
-	 alert("hi");
+//	 alert("hi");
 	 onclick123(hking);
 	  
 	 }
@@ -28,14 +28,14 @@ function globall(obj)
 	
 	  var imgname=obj.childNodes[0].getElementsByTagName;
 	 // document.write(imgname);
- alert(imgname+"imgname");
+ //alert(imgname+"imgname");
        var imgid=obj.childNodes[1].id;
-	 alert(imgid);
+//	 alert(imgid);
 	  
 	 this.colorOfEntity=imgid.charAt(0);
 	
 	var entity=imgid.substring(1);
-	alert("entity"+entity);
+//	alert("entity"+entity);
 	
 	//  if(colorOfEntity=='W' && entity=='QUEEN')
 	 // moveWQUEEN();
@@ -53,9 +53,9 @@ function globall(obj)
 function movePAWN()
 {
 bsindex1=parseInt(divid.charAt(0));
-alert(bsindex1);
+//alert(bsindex1);
 bsindex2=parseInt(divid.charAt(1));
-alert(bsindex2);
+//alert(bsindex2);
 k=bsindex1;
 l=bsindex2;
      if(colorOfEntity=='B')
