@@ -1,41 +1,41 @@
 function moveWKING()
 {
-alert("in move king");	
-alert(" in moveWKING"+divid);
+//alert("in move king");	
+//alert(" in moveWKING"+divid);
 
 findex1=parseInt(divid.charAt(0)); //4
 
 findex2=parseInt(divid.charAt(0)); //4
 sindex1=parseInt(divid.charAt(1))  //2
  sindex2=parseInt(divid.charAt(1))  //2
-alert("before split");
+//alert("before split");
  var splitid=""+findex1+sindex2;
 //alert("tempid"+splitid);
 
 count=0;
- alert("before loop");
- alert("for 41");
+// alert("before loop");
+// alert("for 41");
    for(i=findex1+1,l=sindex1;i<=7;i++)
    {
    
    if(count!=1)
    {
-   alert("after loop");
+  // alert("after loop");
    nextdivid =""+i+l;
    thediv=document.getElementById(nextdivid);
             if(thediv.innerHTML == ' ')
 			{
-			alert("in if");
+//			alert("in if");
 				thediv.style.backgroundColor='red';
 				count=count+1;
 			}
 			else
 			{
 			var imgd=thediv.childNodes[1].id;
-	      alert(imgd);
+	   //   alert(imgd);
          var replacingEntity=imgd.charAt(0);
 	
-          alert("color of entity"+replacingEntity);
+          //alert("color of entity"+replacingEntity);
  
  
  	         if(replacingEntity!=colorOfEntity)
@@ -69,7 +69,7 @@ count=0;
 		else
 		{
 		var imgd=thediv.childNodes[1].id;
-	      alert(imgd);
+	     // alert(imgd);
         var replacingEntity=imgd.charAt(0);
 	
         alert("color of entity"+replacingEntity);
@@ -88,7 +88,7 @@ count=0;
    
    }
    
-   alert("for 30");
+   //alert("for 30");
    
    
     for(l=findex1,m=sindex2-1;m>=0 ;m--)
@@ -108,10 +108,10 @@ count=0;
 		else
 		{
 		var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+	//alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -128,7 +128,7 @@ count=0;
    }
    
    
-   alert("for 32");
+   //alert("for 32");
     for(o=findex1,p=sindex2+1;p<=7;p++)
    {
    
@@ -148,10 +148,10 @@ count=0;
 		{
 		
 		var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+	//alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -172,10 +172,10 @@ count=0;
    
    
    for(v=findex1+1,h=sindex1-1;v<=7 && h>=0;v++,h--)
-   { alert("in 5 for");          
+   {// alert("in 5 for");          
              if(count!=5)
    {
-   alert("count =4");
+   //alert("count =4");
 				nextdivid=""+v+h;
 		thediv=document.getElementById(nextdivid);
 		if(thediv.innerHTML== ' ')
@@ -188,10 +188,10 @@ count=0;
 		else
 		{
 		var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+	//alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -225,10 +225,10 @@ count=0;
 		else
 		{
 		var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+	//alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+// alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -250,7 +250,7 @@ count=0;
    
    
    
-   alert("horizontal forward");
+  // alert("horizontal forward");
    
         for(i=findex1-1,j=sindex1-1;i>=0&&j>=0;i++,j++)
 		{
@@ -270,10 +270,10 @@ count=0;
 		else
 		{
 		var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -310,7 +310,7 @@ count=0;
 		{
 		count=count+1;
 		 var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
  alert("color of entity"+replacingEntity);
