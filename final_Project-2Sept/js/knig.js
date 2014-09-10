@@ -1,6 +1,6 @@
 function globall(obj)
 {
-     alert("hello");
+  //   alert("hello");
      
 	  this.divid=obj.id;
 	  alert(divid);
@@ -13,12 +13,12 @@ function globall(obj)
 	// document.write(imgname);
  
        var imgid=obj.childNodes[1].id;
-	 alert(imgid);
+//	 alert(imgid);
 	  
 	var colorOfEntity=imgid.charAt(0);
 	
 	var entity=imgid.substring(1);
-	alert("entity"+entity);
+//	alert("entity"+entity);
 	
 	  if(colorOfEntity=='W' && entity=='KNIGHT')
 	  moveWKNIGHT();
@@ -44,7 +44,7 @@ function rookMove(colorType,startPosition);
 
 function moveWKNIGHT()
 {
-alert(" in moveWQUEEN"+divid);
+//alert(" in moveWQUEEN"+divid);
 
 findex1=parseInt(divid.charAt(0)); //5
 
@@ -59,11 +59,11 @@ sindex1=parseInt(divid.charAt(1))  //3
 
 count=0;
 
-alert("in all for loops");
+//alert("in all for loops");
 
 for(l=findex1+2,m=sindex1+1;m<=7;m++)
     {
-	alert("in first for loop");
+//	alert("in first for loop");
 	
 	if(count!=1)
 	{
@@ -77,7 +77,7 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in first loop"+count);
+//alert("value of count in first loop"+count);
 }
 else
 count=count+1;
@@ -107,7 +107,7 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in second loop"+count);
+//alert("value of count in second loop"+count);
 
 }
 else
@@ -139,7 +139,7 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in third loop"+count);
+//alert("value of count in third loop"+count);
 
 }
 else
@@ -169,7 +169,7 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in fourth loop"+count);
+//alert("value of count in fourth loop"+count);
 
 }
 else
@@ -199,8 +199,8 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert(count);
-alert("value of count in fifth loop"+count);
+//alert(count);
+//alert("value of count in fifth loop"+count);
 
 }
 else
@@ -231,7 +231,7 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in sixth loop"+count);
+//alert("value of count in sixth loop"+count);
 
 }
 else
@@ -258,7 +258,7 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in seventh loop"+count);
+//alert("value of count in seventh loop"+count);
 
 }
 else
@@ -287,7 +287,7 @@ if(thediv.innerHTML == ' ')
 {
 thediv.style.backgroundColor='red';
 count=count+1;
-alert("value of count in eigth loop"+count);
+//alert("value of count in eigth loop"+count);
 
 }
 else
