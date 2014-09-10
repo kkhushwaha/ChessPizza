@@ -907,8 +907,8 @@ function moveWBISHOP()
 {
 var colorOfEntity2;
 var c;
-alert("color of entity"+colorOfEntity);
-alert(" in moveWQUEEN"+divid);
+//alert("color of entity"+colorOfEntity);
+//alert(" in moveWQUEEN"+divid);
 
 findex1=parseInt(divid.charAt(0)); //4
 
@@ -933,10 +933,10 @@ thediv.style.backgroundColor='red';
 else
 {
    var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  	if(replacingEntity!=colorOfEntity)
@@ -962,10 +962,10 @@ break;
 			 else
 			 {
 			  var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  if(replacingEntity!=colorOfEntity)
     thediv.style.backgroundColor='red';
  
@@ -998,10 +998,10 @@ break;
 			 else
 			{
 		  var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  if(replacingEntity!=colorOfEntity)
     thediv.style.backgroundColor='red';
@@ -1027,10 +1027,10 @@ break;
 			 else
 			 {
 		  var imgd=thediv.childNodes[1].id;
-	alert(imgd);
+//	alert(imgd);
  var replacingEntity=imgd.charAt(0);
 	
- alert("color of entity"+replacingEntity);
+ //alert("color of entity"+replacingEntity);
  
  
  if(replacingEntity!=colorOfEntity)
